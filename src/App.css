@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+@font-face{
+  src: url(./fonts/Rubik-VariableFont_wght.ttf);
+  font-family: Rubik;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  width: 100%;
+  background-color: #e2f9d2;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234a5440' fill-opacity='0.49'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading{
+  width: 50%;
+  margin: 2.5% auto;
+  background-color: #92b6b1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  row-gap: 6px;
+  padding: 1rem;
+  box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.82);
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-size: 2.5rem;
+}
+.main{
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+input[type=text]{
+  width: 130%;
+  font-size: 24px;
+  border-radius: 6px;
+  background-color: rgb(178, 197, 207);
+  padding: 3px 6px;
+}
+label{
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
+
+.output{
+  
+}
+
+.block{
+  width: 80%;
+  background-color:#d1c7a2;
+  margin: 50px auto;
+  padding: 1rem 2rem;
+  box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.82);
+}
+img{
+  float: right;
+}
+.block *{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+h3{
+  font-size: 2rem;
+  width: fit-content;
+  border-bottom: 2px solid black;
+}
+
+
+button{
+  font-size: 1.4rem;
+  padding: 2px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.paragraph{
+  font-size: 24px;
+  word-break: break-all;
+}
+
+footer{
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+/* ------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px){
+  .heading{
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  html, body {     
+    margin:0; 
+    padding:0; 
+    width:100%; 
+    height:100%; 
+    max-width: 100%;
+    position: absolute;
+}
+
+  input[type=text]{
+    width: 100%;
+  }
+  h1{
+    text-align: center;
   }
 }
